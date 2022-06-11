@@ -6,7 +6,7 @@
 import requests
 import xbmc
 
-API_key = '3320855e65a9758297fec4f7c9717698'
+API_key = '8dab40d33f714eac25d0cb700f51bd4d'
 find_url = 'https://api.themoviedb.org/3/find/%s?api_key=%s&external_source=%s' % ('%s', API_key, '%s')
 externalids_url = 'https://api.themoviedb.org/3/%s/%s/external_ids?api_key=%s' % ('%s', '%s', API_key)
 
