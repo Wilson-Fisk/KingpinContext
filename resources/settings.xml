@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<settings>
+	<category label="30000">
+<!-- 		<setting label="30001" type="bool" id="general.on.back" default="true"/> -->
+		<setting type="lsep" label="30002" />
+		<setting label="30012" type="bool" id="context.kingpin.settings" default="true"/>
+		<setting label="30003" type="bool" id="context.kingpin.traktManager" default="true"/>
+		<setting label="30004" type="bool" id="context.kingpin.ckingpinarProviders" default="true"/>
+		<setting label="30013" type="bool" id="context.kingpin.ckingpinarBookmark" default="true"/>
+		<setting label="30005" type="bool" id="context.kingpin.rescrape" default="true"/>
+		<setting label="30006" type="bool" id="context.kingpin.playFromHere" default="true"/>
+		<setting label="30007" type="bool" id="context.kingpin.autoPlay" default="true"/>
+		<setting label="30008" type="bool" id="context.kingpin.sourceSekingpinct" default="true"/>
+		<setting label="30009" type="bool" id="context.kingpin.findSimilar" default="true"/>
+		<setting label="30010" type="bool" id="context.kingpin.browseSeries" default="true"/>
+		<setting label="30011" type="bool" id="context.kingpin.browseEpisodes" default="true"/>
+	</category>
+
+	<category label="30014">
+		<setting label="30015" type="bool" id="checkAddonUpdates"  default="false" />
+	</category>
+
+</settings>
