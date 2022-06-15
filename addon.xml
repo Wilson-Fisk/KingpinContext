@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="context.kingpin" name="Kingpin - Global Context Menu Items" provider-name="Kingpin" version="0.0.6">
+<addon id="context.kingpin" name="Kingpin - Global Context Menu Items" provider-name="Kingpin" version="0.0.7">
 	<requires>
 		<import addon="script.module.requests" version="2.19.1" />
 	</requires>
 	<extension point="kodi.context.item">
 		<menu id="kodi.core.main">
 			<item library="contextSettings.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - CM Settings</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - CM Settings</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.settings)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -14,7 +14,7 @@
 				</visible>
 			</item>
 			<item library="traktManager.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Trakt Manager</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Trakt Manager</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.traktManager)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -23,7 +23,7 @@
 				</visible>
 			</item>
 			<item library="clearProviders.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Clear Providers</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Clear Providers</label>
 				<visible>
 					[!String.IsEmpty(Window(home).Property(context.Kingpin.clearProviders)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.Kingpin/?action=play) +
@@ -35,7 +35,7 @@
 				</visible>
 			</item>
 			<item library="clearBookmark.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Clear Item Bookmark</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Clear Item Bookmark</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.clearBookmark)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.Kingpin/?action=play) +
@@ -45,7 +45,7 @@
 				</visible>
 			</item>
 			<item library="rescrape.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Rescrape Item</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Rescrape Item</label>
 				<visible>
 					[!String.IsEmpty(Window(home).Property(context.Kingpin.rescrape)) +
 					String.StartsWith(ListItem.FolderPath,plugin://plugin.video.Kingpin/?action=play) +
@@ -54,7 +54,7 @@
 				</visible>
 			</item>
 			<item library="libRescrape.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Rescrape Lib Item</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Rescrape Lib Item</label>
 				<visible>
 					String.Contains(Container.FolderPath,videodb://) +
 					[String.Contains(Container.ListItem.Path,Window(home).Property(Kingpin.movieLib.path)) | String.Contains(Container.ListItem.Path,Window(home).Property(Kingpin.tvLib.path))] +
@@ -62,7 +62,7 @@
 				</visible>
 			</item>
 			<item library="playFromHere.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Play from here</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Play from here</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.playFromHere)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -71,7 +71,7 @@
 				</visible>
 			</item>
 			<item library="autoPlay.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Auto Play</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Auto Play</label>
 				<visible>
 					String.IsEmpty(Window(home).Property(Kingpin.autoPlay.enabled)) +
 					!String.IsEmpty(Window(home).Property(context.Kingpin.autoPlay)) +
@@ -81,7 +81,7 @@
 				</visible>
 			</item>
 			<item library="sourceSelect.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Source Select</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Source Select</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(Kingpin.autoPlay.enabled)) +
 					!String.IsEmpty(Window(home).Property(context.Kingpin.sourceSelect)) +
@@ -91,7 +91,7 @@
 				</visible>
 			</item>
 			<item library="findSimilar.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Find Similar</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Find Similar</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.findSimilar)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -100,7 +100,7 @@
 				</visible>
 			</item>
 			<item library="browseSeries.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Browse Series</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Browse Series</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.browseSeries)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -109,7 +109,7 @@
 				</visible>
 			</item>
 			<item library="browseEpisodes.py">
-				<label>[B][COLOR red]Kingpin[/COLOR][/B] - Browse Episodes</label>
+				<label>[B][COLOR magenta]Kingpin[/COLOR][/B] - Browse Episodes</label>
 				<visible>
 					!String.IsEmpty(Window(home).Property(context.Kingpin.browseEpisodes)) +
 					String.StartsWith(ListItem.path,plugin://plugin.video.Kingpin/) +
@@ -126,8 +126,8 @@
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
 		<forum></forum>
-		<website>https://github.com/123Kingpin/context.Kingpin</website>
-		<source>https://github.com/123Kingpin/context.Kingpin</source>
+		<website>https://github.com/Wilson-Fisk/KingpinContext</website>
+		<source>https://github.com/Wilson-Fisk/KingpinContext</source>
 		<disclaimer lang="en"></disclaimer>
 		<assets>
 			<icon>icon.png</icon>
@@ -135,8 +135,8 @@
 			<screenshot></screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v1.2.1 - Nov. 04, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] The "Rescrape Item" context menu now has a pop-up select method of 4 possible choices to rescrape.  You can set a preferred default action in the settings to bypass the select dialog pop up.[/I]
+[B][COLOR magenta]Update - v0.0.7 - Jun. 14, 2022[/COLOR][/B]
+[COLOR magenta]--[/COLOR][I] Kingpin is here.[/I]
 		</news>
 	</extension>
 </addon>
